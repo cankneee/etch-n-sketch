@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Etch N Sketch</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="title"><h1>Etch N Sketch</h1></div>
+        <div class="content" id="dots">
+          <div class="board" id="board_content"></div>
+          <div class="buttons">
+            <button onclick="changeColor(`black`)">Black</button>
+            <button onclick="changeColor(`lightgray`)">Erasor</button>
+            <button onclick="reset()">Reset</button>
+          </div>
+        <div class="input">
+            <div>Input must be between 2 and 100 to change the size of the board.</div>
+        </div> 
+        <div class="number_input"><input type="text" id="size" value="16" onchange="changeSize(this.value)">
+            <button>Set Size</button>
+        </div>
+    </div>
+</body>
+
+<script src="js/js.js"></script>
+</html>
